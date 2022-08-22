@@ -246,7 +246,7 @@
   }
   
   footer{
-      background-color: yellow;
+      background-image:linear-gradient(rgb(255, 81, 0), yellow);
       padding: 10px;
   }
   
@@ -254,8 +254,12 @@
       text-align: center;
       font-family: 'Josefin Sans', sans-serif;
       color: blueviolet;
-      
+      transform-style: preserve-3d;
   
+  }
+
+  footer p:hover{
+    transform: rotateX(40deg);
   }
   
   footer img{
@@ -282,7 +286,7 @@
       background-size: cover;
       min-height: 545px;
       text-align: center;
-      font-size: 1.5em;
+      font-size: 1em;
   }
   
   form input {
@@ -306,7 +310,7 @@
   .fondo-imagen{
       background-image: url(../imagenes/shop-for-clothing-clothes-shop-on-hanger-at-the-modern-shop-boutique\ \(1\).jpg);
       background-size: cover;
-      min-height: 545px;
+      min-height: 400px;
       font-size: 1.5em;
       
   }
@@ -334,6 +338,10 @@
       left: 35%;
       top: 25%;
       right: 35%;
+      animation-name: entrada;
+  animation-duration: 5s;
+  animation-delay: .5s;
+
       
       
   }
@@ -342,4 +350,14 @@
       text-align: center;
   }
   
-  
+
+@keyframes entrada{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
