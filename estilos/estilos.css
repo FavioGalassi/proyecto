@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }
+  
+  
+
+  #menu{
+    background-color: yellow;
+    height: 10vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"logo paginas" ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+   
+  }
+
+  #logo{
+    grid-area: logo;
+  }
+
+  #paginas{
+    grid-area: paginas;
+  }
+  
+  nav div ul li {
+    list-style: none;
+    display: inline-block;
+   }
+
+   nav div ul li a{
+    text-decoration: none;
+    margin: 1px;
+   }
+
+
+  main{
+    height: 80vh;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+     }
+
+  main section{
+    width: 20vw;
+   
+  
+  } 
+  
+  main article{
+    width: 60vw;
+  }
+
+  footer{
+    height: 10vh;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+  .wp{
+    height: 30px;
+    width: 30px;
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    #menu{
+     
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr ;
+       grid-template-areas:"logo"  
+                           "paginas";
+      }
+
+      main{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        
+         }
+    
+    }
+
+
+
+
+
+ #menu1{
+    background-color: yellow;
+    height: 10vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"logo1 paginas1" ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+   
+  }
+
+  #logo1{
+    grid-area: logo1;
+  }
+
+  #paginas1{
+    grid-area: paginas1;
+  }
+
+
+
+ main{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:"promo mail" ;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+
+ } 
+
+ #promo{
+    grid-area: promo;
+ }
+ 
+#mail{
+    grid-area: mail;
+}
+
+
+  .pie1{
+    height: 10vh;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+  .wp1{
+    height: 30px;
+    width: 30px;
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    #menu1{
+     
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr ;
+       grid-template-areas:"logo1"  
+                           "paginas1";
+      }
+
+  
+    main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+
+  }
+  #mail{
+    margin-top: 15px;
+    
+  }
+
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;  
+  }
+  
+  h1{
+      
+      font-family: 'Josefin Sans', sans-serif;
+      color: blueviolet;
+      font-size: 3em
+  }
+  
+  header{
+      position: sticky;
+      top:0;
+      width: 100%;
+  }
+  
+  .color-nav{
+     background-color: yellow;
+     
+  }
+  
+  nav ul li{
+      list-style: none;
+      display: inline-block;
+      margin-left: 5px;
+      margin-bottom: 5 px;
+      
+  }
+  nav ul li a{
+      text-decoration: none;
+      color: blueviolet;
+  
+  
+  }
+  
+  .imagen-fondo{
+     background-image: url(../imagenes/fast-fashion-vs-slow-sustainable-fashion.jpg);
+     background-size: cover;
+     min-height:600px ;
+  }
+    
+  h3{
+      font-family: 'Signika Negative', sans-serif;
+      color: black;
+      font-size: 3.5em;
+      text-align: center;
+  
+  }
+  
+  p{
+      font-family: 'Signika Negative', sans-serif;
+      color: black;
+      font-size: 1.5em;
+  }
+  
+  footer{
+      background-color: yellow;
+      padding: 10px;
+  }
+  
+  footer p{
+      text-align: center;
+      font-family: 'Josefin Sans', sans-serif;
+      color: blueviolet;
+      
+  
+  }
+  
+  footer img{
+      width: 32px;
+      height: 32px;
+  }
+  
+  .texto-prendas{
+     
+      background-color: yellow;
+      background-size: cover;
+  }
+  
+  .fondo-prendas{
+      background-color: blueviolet;
+      min-height: 120%;
+      display: flex;
+      align-items: center;
+      
+  }
+  
+  .fondo-pagina{
+      background-image: url(../imagenes/shop-for-clothing-clothes-shop-on-hanger-at-the-modern-shop-boutique\ \(1\).jpg);
+      background-size: cover;
+      min-height: 545px;
+      text-align: center;
+      font-size: 1.5em;
+  }
+  
+  form input {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+  }
+  
+  
+  
+  
+  span {
+        background-color: yellow;
+        position: absolute;  
+        top: 15%;
+        left: 10%;
+        right: 10%;
+  
+  }
+  
+  .fondo-imagen{
+      background-image: url(../imagenes/shop-for-clothing-clothes-shop-on-hanger-at-the-modern-shop-boutique\ \(1\).jpg);
+      background-size: cover;
+      min-height: 545px;
+      font-size: 1.5em;
+      
+  }
+  
+  .promo{
+      background-color: yellow;
+      position: absolute;
+      left: 25%;
+      top: 25%;
+      right: 25%;
+      
+  }
+  
+  section p{
+      text-align: center;
+  }
+  
+  td{
+      padding: 5px;
+  }
+  
+  .talles{
+      background-color: yellow;
+      position: absolute;
+      left: 35%;
+      top: 25%;
+      right: 35%;
+      
+      
+  }
+  
+  .tabla-titulo{
+      text-align: center;
+  }
+  
+  
